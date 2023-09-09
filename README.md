@@ -1,4 +1,4 @@
-A method for enhancing rotational robustness in 3D face reconstruction with E2CNN and transformer-based encoder
+E2TKFace
 
 Accurate 3D face reconstruction from a single 2D image remains a challenging task in computer vision because existing neural networks lack rotation robustness. In this paper, we propose a novel approach called E2TKFace, which combines
 a group equivariant convolutional neural network architecture with a window attention mechanism for 3D face alignment and reconstruction. E2TKFace uses a UV position map to represent the 3D face, allowing the prediction of over 50,000
