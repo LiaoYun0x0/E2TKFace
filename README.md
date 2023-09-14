@@ -1,9 +1,5 @@
-# PRN
-## Notice
-This repository is only a re-implementation of 《Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network》.
-If you use this code, please observe the license of [PRNet](https://github.com/YadiraF/PRNet) and [3DDFA](https://github.com/mmatl/pyrender).
-Please make sure that this code is only used for research and non-commercial purposes.
-I hope this re-implementation can help you.
+# E2TKFace
+Accurate 3D face reconstruction from a single 2D image remains a challenging task in computer vision because existing neural networks lack rotation robustness. In this paper, we propose a novel approach called E2TKFace, which combines a group equivariant convolutional neural network architecture with a window attention mechanism for 3D face alignment and reconstruction. E2TKFace uses a UV position map to represent the 3D face, allowing the prediction of over 50,000 points using a 256-size UV map. Experimental results demonstrate the effectiveness and robustness of E2TKFace in handling challenging and complex facial poses.
 ## Requirements:
     python 3.6.9
     opencv-python 4.1
@@ -15,7 +11,7 @@ I hope this re-implementation can help you.
     scipy 1.3.1
     tensorboard 2.0.0
     torchvision 0.3.0
-    
+
 ## Getting started
 Please refer to [face3d](https://github.com/YadiraF/face3d/blob/master/examples/Data/BFM/readme.md) to prepare BFM data. And move the generated files in Out/
  to data/Out/
@@ -54,12 +50,4 @@ python torchrun.py -train=False -test=True -pd=data/images/AFLW2000 --loadModelP
 
 ```
 
-A pre-trained model is provided at [here](https://drive.google.com/file/d/1YwNPKrLQ8z2WJZd9PLibAK9WF6Eq7Yfy/view?usp=sharing)
 
-
-Result examples:
-
-
-![Alt text](data/doc/0_init.jpg "optional title")
-![Alt text](data/doc/0_kpt.jpg "optional title")
-![Alt text](data/doc/0_shape.jpg "optional title")
